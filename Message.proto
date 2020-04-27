@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package main;
+
+option go_package = ".;main";
+
+message clientMessage {
+	int64 sent = 1;
+	int64 dropped = 2;
+}
+message serverMessage {
+	int64 numTokens = 1;
+}
